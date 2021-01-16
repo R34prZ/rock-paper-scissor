@@ -16,7 +16,7 @@ def menu():
     print("HELP, START, QUIT, SCORE")
     print("-" * 50)
 
-    HINTS = ["If you type anything than Y or N in game you can continue playing.",
+    HINTS = ["If you type anything other than Y or N in game you can continue playing.",
              "Don't underestimate the computer...it starts with ties...",
              "I don't really know how to make a good score option lol",
              "I made a score thingy hehe boi",
@@ -35,7 +35,7 @@ def menu():
 
     elif p_choice.lower() == "quit":
         print("Going back to menu...") 
-        print(choice(HINTS))
+        print("HINT:" + " " + choice(HINTS))
 
     
     elif p_choice.lower() == "score":
