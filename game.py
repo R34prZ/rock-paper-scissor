@@ -25,13 +25,15 @@ def game():
         print()
         print("_" * 50)
         print("\t\tContinue? ")
-        pause = input("Y/N: ")
+        pause = input("Y/N or MENU: ")
         print("_" * 50)
         print()
 
         if pause == "N":
+            game()
+        elif pause.lower() == "menu":
             sleep(0.5)
-            print("Ok leaving to the menu...",)
+            print("Ok leaving to the menu...")
             menu.menu()
             break
         elif pause == "Y":
